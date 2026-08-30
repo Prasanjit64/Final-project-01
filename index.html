@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasanjit Ghosh | Mathematics Student &amp; Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Prasanjit Ghosh, a Mathematics student from Siliguri, India, exploring web development and building practical projects." />
+  <meta name="keywords" content="Prasanjit Ghosh, Mathematics Student, Web Developer, Siliguri, Portfolio, Surya Sen Mahavidyalaya" />
+  <meta name="author" content="Prasanjit Ghosh" />
+
+  <!-- Open Graph (placeholders, update with real domain & image once deployed) -->
+  <meta property="og:title" content="Prasanjit Ghosh | Mathematics Student &amp; Aspiring Web Developer" />
+  <meta property="og:description" content="Mathematics student from Siliguri, India, learning web development by building practical projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-vercel-domain.vercel.app/" />
+  <meta property="og:image" content="images/profile.png" />
+
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Background photo + grid + curve (decorative, aria-hidden) ===== -->
+  <div class="bg-photo" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ===== Skip link for accessibility ===== -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Navigation ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="nav-brand">
+        <span class="nav-brand-mark" aria-hidden="true">PG</span>
+        <span class="nav-brand-name">Prasanjit Ghosh</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow reveal">Hello, I&rsquo;m</p>
+          <h1 class="hero-name reveal">Prasanjit Ghosh</h1>
+          <h2 class="hero-title reveal">
+            <span class="hero-title-fx">f(x)</span> Mathematics Student
+            <span class="hero-divider" aria-hidden="true">&nbsp;&middot;&nbsp;</span>
+            Aspiring Web Developer
+          </h2>
+          <p class="hero-text reveal">
+            I&rsquo;m a Mathematics student who got curious about how the web works &mdash;
+            so I started building it. I enjoy learning technology by creating practical
+            projects, and I bring the same logical, step-by-step thinking from proofs
+            and problem sets into every line of code I write.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="resume.pdf" class="btn btn-secondary" id="resumeViewBtnHero" target="_blank" rel="noopener noreferrer">
+              View Resume
+            </a>
+            <a href="resume.pdf" class="btn btn-secondary" id="resumeBtnHero" download>
+              Download Resume
+            </a>
+          </div>
+
+          <ul class="hero-meta reveal">
+            <li>
+              <svg viewBox="0 0 24 24" class="meta-icon" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.4 7 11.5 7.3 11.8.2.2.5.3.7.3s.5-.1.7-.3C13 21.5 20 15.4 20 10c0-4.4-3.6-8-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
+              <span>Siliguri, India</span>
+            </li>
+            <li>
+              <a href="https://github.com/Prasanjit64" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" class="meta-icon" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:abhayghosh750@gmail.com">
+                <svg viewBox="0 0 24 24" class="meta-icon" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.01L12 12l8-5.99V6H4Zm16 12V8.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16Z"/></svg>
+                <span>Email Me</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="curve-svg" viewBox="0 0 480 480" fill="none">
+            <!-- faint coordinate axes -->
+            <line x1="40" y1="240" x2="440" y2="240" class="axis-line" />
+            <line x1="240" y1="40" x2="240" y2="440" class="axis-line" />
+            <!-- tick marks -->
+            <g class="ticks">
+              <line x1="100" y1="236" x2="100" y2="244" />
+              <line x1="380" y1="236" x2="380" y2="244" />
+              <line x1="236" y1="100" x2="244" y2="100" />
+              <line x1="236" y1="380" x2="244" y2="380" />
+            </g>
+            <!-- animated sine curve, drawn on load -->
+            <path id="sineCurve" class="sine-curve"
+              d="M40,240 C90,120 140,120 190,240 C240,360 290,360 340,240 C365,180 400,150 440,110" />
+            <!-- traveling point along curve -->
+            <circle id="curveDot" class="curve-dot" r="6" cx="40" cy="240" />
+          </svg>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="section-inner about-grid">
+        <div class="about-media reveal">
+          <div class="profile-frame">
+            <img src="images/profile.jpeg" alt="Portrait of Prasanjit Ghosh" class="profile-img" onerror="this.onerror=null;this.src='';this.classList.add('img-fallback')" />
+            <div class="profile-fallback-text" aria-hidden="true">PG</div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow reveal">About Me</p>
+          <h2 class="section-title reveal">Where logic meets the browser</h2>
+          <p class="body-text reveal">
+            I&rsquo;m currently a 2nd year Mathematics student at Surya Sen Mahavidyalaya.
+            Somewhere between proofs and problem sets, I got interested in how websites
+            are actually built &mdash; and I started teaching myself by making things.
+          </p>
+          <p class="body-text reveal">
+            Web development is still a field I&rsquo;m exploring, not one I&rsquo;ve
+            mastered, and I&rsquo;m okay saying that. What I bring from Mathematics is a
+            habit of breaking problems into smaller steps, checking my work, and not
+            being afraid of getting something wrong before I get it right &mdash; the
+            same approach that helps when a project doesn&rsquo;t run the first time.
+          </p>
+          <p class="body-text reveal">
+            My goal is simple: keep building real, practical projects, keep learning
+            the tools of the trade, and steadily grow from a student who codes into a
+            developer who studied Mathematics.
+          </p>
+
+          <div class="about-facts reveal">
+            <div class="fact">
+              <span class="fact-label">Currently</span>
+              <span class="fact-value">2nd Year, B.Sc. Mathematics</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Based in</span>
+              <span class="fact-value">Siliguri, India</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Learning</span>
+              <span class="fact-value">HTML, CSS &amp; JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section section-alt" id="education">
+      <div class="section-inner">
+        <p class="eyebrow reveal center">Education</p>
+        <h2 class="section-title reveal center">My academic path</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">01</div>
+            <div class="timeline-card">
+              <span class="timeline-tag">Current</span>
+              <h3>Surya Sen Mahavidyalaya</h3>
+              <p>2nd Year &middot; Mathematics</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">02</div>
+            <div class="timeline-card">
+              <span class="timeline-tag">Higher Secondary &middot; 12th</span>
+              <h3>Raiganj Debinagar Kailash Chandra Radha Rani Vidyapeeth</h3>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">03</div>
+            <div class="timeline-card">
+              <span class="timeline-tag">Secondary &middot; 10th</span>
+              <h3>Damdama High School</h3>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">04</div>
+            <div class="timeline-card">
+              <span class="timeline-tag">Classes 5&ndash;8</span>
+              <h3>Dalkhola High School</h3>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow reveal center">Skills</p>
+        <h2 class="section-title reveal center">Tools I&rsquo;m learning to work with</h2>
+        <p class="section-sub reveal center">
+          I&rsquo;m early in this journey &mdash; here&rsquo;s what I&rsquo;m currently
+          comfortable with and actively practicing. This list will keep growing.
+        </p>
+
+        <!-- 
+          CUSTOMIZE: Add / remove <div class="skill-card"> blocks freely.
+          Each card = one skill. data-level (0-100) controls the progress bar fill.
+        -->
+        <div class="skills-groups">
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Frontend</h3>
+            <div class="skill-cards">
+              <div class="skill-card" data-level="70">
+                <div class="skill-card-head">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <p class="skill-desc">Structuring accessible, semantic pages.</p>
+                <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-card" data-level="65">
+                <div class="skill-card-head">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-percent">65%</span>
+                </div>
+                <p class="skill-desc">Layout, responsive design, and styling.</p>
+                <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-card" data-level="55">
+                <div class="skill-card-head">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percent">55%</span>
+                </div>
+                <p class="skill-desc">Adding interactivity and logic to pages.</p>
+                <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Tools</h3>
+            <div class="skill-cards">
+              <div class="skill-card" data-level="60">
+                <div class="skill-card-head">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-percent">60%</span>
+                </div>
+                <p class="skill-desc">Version control for tracking my projects.</p>
+                <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-card" data-level="65">
+                <div class="skill-card-head">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-percent">65%</span>
+                </div>
+                <p class="skill-desc">Hosting code and collaborating on it.</p>
+                <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Other</h3>
+            <div class="skill-cards">
+              <div class="skill-card" data-level="70">
+                <div class="skill-card-head">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <p class="skill-desc">Making pages work well on any screen.</p>
+                <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+              </div>
+              <div class="skill-card" data-level="80">
+                <div class="skill-card-head">
+                  <span class="skill-name">Problem Solving</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <p class="skill-desc">Breaking problems down, Mathematics-style.</p>
+                <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section section-alt" id="projects">
+      <div class="section-inner">
+        <p class="eyebrow reveal center">Projects</p>
+        <h2 class="section-title reveal center">Things I&rsquo;ve built while learning</h2>
+        <p class="section-sub reveal center">
+          A few practical projects from my development journey so far.
+        </p>
+
+        <!-- Filter controls (JS-driven; "All" shows everything) -->
+        <div class="project-filters reveal" role="tablist" aria-label="Filter projects by technology">
+          <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="html" role="tab" aria-selected="false">HTML</button>
+          <button class="filter-btn" data-filter="css" role="tab" aria-selected="false">CSS</button>
+          <button class="filter-btn" data-filter="javascript" role="tab" aria-selected="false">JavaScript</button>
+        </div>
+
+        <!--
+          CUSTOMIZE: Copy a whole <article class="project-card"> block to add a new project.
+          Set data-tech="html css javascript" (space separated, lowercase) to match filters.
+        -->
+        <div class="project-grid">
+
+          <article class="project-card reveal" data-tech="html css javascript">
+            <div class="project-thumb">
+              <img src="images/project1.png" alt="Screenshot of the Travel-Go trip planner interface" onerror="this.parentElement.classList.add('thumb-fallback')" />
+              <span class="thumb-fallback-label" aria-hidden="true">Travel-Go</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Travel-Go &mdash; Travel Platform</h3>
+              <p class="project-desc">
+                A travel planning platform designed to help users organize and explore
+                travel plans through an interactive web experience.
+              </p>
+              <ul class="tech-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://travel-go-travel-platform--abhay011.replit.app/trip-planner" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                </a>
+                <a href="#" class="btn btn-small btn-ghost" aria-disabled="true" title="GitHub repository link coming soon">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tech="html css javascript">
+            <div class="project-thumb">
+              <img src="images/project2.png" alt="Screenshot of the MediCare AI homepage" onerror="this.parentElement.classList.add('thumb-fallback')" />
+              <span class="thumb-fallback-label" aria-hidden="true">MediCare AI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MediCare AI</h3>
+              <p class="project-desc">
+                A web project created as part of my development and learning journey.
+              </p>
+              <ul class="tech-tags">
+                <li>Tech stack &mdash; TBA</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://try-a7p1.vercel.app/" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                </a>
+                <a href="#" class="btn btn-small btn-ghost" aria-disabled="true" title="GitHub repository link coming soon">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tech="html css javascript">
+            <div class="project-thumb">
+              <img src="images/project3.png" alt="Screenshot of the EduManage sign-in screen" onerror="this.parentElement.classList.add('thumb-fallback')" />
+              <span class="thumb-fallback-label" aria-hidden="true">EduManage</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">EduManage</h3>
+              <p class="project-desc">
+                A web project created while experimenting with web development and
+                building practical applications.
+              </p>
+              <ul class="tech-tags">
+                <li>Tech stack &mdash; TBA</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://try-pn4y.vercel.app/" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                </a>
+                <a href="#" class="btn btn-small btn-ghost" aria-disabled="true" title="GitHub repository link coming soon">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="project-note reveal">
+          GitHub repository links will be added here once each project is uploaded to
+          <a href="https://github.com/Prasanjit64" target="_blank" rel="noopener noreferrer">github.com/Prasanjit64</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Resume ===== -->
+    <section class="section resume-section" id="resume">
+      <div class="section-inner resume-inner reveal">
+        <p class="eyebrow center">Resume</p>
+        <h2 class="section-title center">Want to know more about my journey?</h2>
+        <p class="section-sub center">
+          Here&rsquo;s a one-page overview of my education, skills, and projects so far.
+        </p>
+        <div class="resume-actions">
+          <a href="resume.pdf" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer" id="resumeViewBtnMain">
+            View Resume
+          </a>
+          <a href="resume.pdf" class="btn btn-primary btn-large" download id="resumeBtnMain">
+            Download Resume
+          </a>
+        </div>
+        <p class="resume-hint">
+          (This is generated from the information on this page. Replace
+          <code>resume.pdf</code> in the project root any time you want to swap in an
+          updated version &mdash; no code changes needed.)
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section-alt" id="contact">
+      <div class="section-inner contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let&rsquo;s Connect</h2>
+          <p class="body-text">
+            Have a project in mind, a question, or just want to say hello? My inbox is open.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" class="meta-icon" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.01L12 12l8-5.99V6H4Zm16 12V8.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16Z"/></svg>
+              <a href="mailto:abhayghosh750@gmail.com">abhayghosh750@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" class="meta-icon" aria-hidden="true"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+              <a href="tel:+919242083963">+91 92420 83963</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" class="meta-icon" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.4 7 11.5 7.3 11.8.2.2.5.3.7.3s.5-.1.7-.3C13 21.5 20 15.4 20 10c0-4.4-3.6-8-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
+              <span>Siliguri, India</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" class="meta-icon" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              <a href="https://github.com/Prasanjit64" target="_blank" rel="noopener noreferrer">github.com/Prasanjit64</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate
+              action="https://formsubmit.co/abhayghosh750@gmail.com" method="POST">
+          <!-- FormSubmit configuration fields: no backend server needed to receive these messages -->
+          <input type="hidden" name="_subject" value="New message from your portfolio site" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <span class="form-error" id="nameError" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <span class="form-error" id="emailError" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            <span class="form-error" id="messageError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+          <p class="form-disclaimer">
+            Messages sent here go straight to my inbox.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="section-inner footer-inner">
+      <p>&copy; <span id="year"></span> Prasanjit Ghosh. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="https://github.com/Prasanjit64" target="_blank" rel="noopener noreferrer" class="footer-github">
+        github.com/Prasanjit64
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===== Scroll to top ===== -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
